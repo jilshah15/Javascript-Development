@@ -1,0 +1,22 @@
+const Devices=[
+    {
+        name:"Lamp-001",
+        status:"ON",
+        temp:32
+    },
+    {
+        name:"Lamp-002",
+        status:"OFF",
+        temp:29
+    },
+    {
+        name:"Lamp-003",
+        status:"ON",
+        temp:38
+    },
+    {
+        name:"Lamp-004",
+        status:"OFF",
+        temp:31
+    }
+];
