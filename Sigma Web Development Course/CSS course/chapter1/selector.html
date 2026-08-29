@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 1.Element Selctor          */
+      div {
+        background-color: red;
+      }
+      /* 2.child selector */
+      div > p {
+        background-color: brown;
+        text-align: center;
+      }
+      /* 3.descendant Selector */
+      div p {
+        color: cadetblue;
+      }
+
+      /* 4.Class selector */
+      .green {
+        background-color: greenyellow;
+      }
+
+      /* 5.Id Selector */
+      #color {
+        background-color: aqua;
+      }
+      /* 6.Universal Selector */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* 7.Pseudo Selector */
+      a:link {
+        color: purple;
+      }
+      a:visited {
+        color: yellow;
+      }
+      a:active{
+        background-color: orange;
+      }
+      a:hover {
+        color: red;
+    }
+    p:first-child{
+        background-color: aqua;
+    }
+    </style>
+  </head>
+  <body>
+    <div>
+      I am div
+      <article>
+        <p>Hello I am child element of div</p>
+      </article>
+    </div>
+    <div class="green">I am div</div>
+    <div id="color">I am div</div>
+    <a href="https://google.com">Google</a><br />
+    <a href="https://Facebook.com">Facebook</a>
+    <main class="one">
+        <p>Hi..How are You</p>
+    </main>
+  </body>
+</html>

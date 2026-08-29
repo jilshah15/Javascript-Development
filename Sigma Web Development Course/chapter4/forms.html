@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+        background:#f4f6f9;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        min-height:100vh;
+        padding:20px;
+    }
+
+    form{
+        background:#fff;
+        width:450px;
+        padding:30px;
+        border-radius:10px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    h1{
+        text-align:center;
+        margin-bottom:20px;
+        color:#333;
+    }
+
+    div{
+        margin-bottom:15px;
+    }
+
+    label{
+        display:block;
+        margin-bottom:6px;
+        font-weight:bold;
+        color:#444;
+    }
+
+    input,
+    select,
+    textarea{
+        width:100%;
+        padding:10px;
+        border:1px solid #ccc;
+        border-radius:5px;
+        font-size:15px;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus{
+        outline:none;
+        border-color:#007BFF;
+        box-shadow:0 0 5px rgba(0,123,255,.3);
+    }
+
+    textarea{
+        resize:vertical;
+    }
+
+    /* Subscription */
+    .radio-group{
+        display:flex;
+        gap:20px;
+        align-items:center;
+        margin-top:10px;
+    }
+
+    .radio-group label{
+        display:inline;
+        font-weight:normal;
+        margin-left:5px;
+    }
+
+    .radio-group input{
+        width:auto;
+    }
+
+    /* Checkbox */
+    .checkbox-group{
+        display:flex;
+        align-items:center;
+        gap:8px;
+    }
+
+    .checkbox-group input{
+        width:auto;
+    }
+
+    .checkbox-group label{
+        display:inline;
+        font-weight:normal;
+        margin:0;
+    }
+
+    button{
+        width:100%;
+        padding:12px;
+        border:none;
+        border-radius:5px;
+        background:#007BFF;
+        color:white;
+        font-size:16px;
+        cursor:pointer;
+        transition:.3s;
+    }
+
+    button:hover{
+        background:#0056b3;
+    }
+</style>
+  </head>
+  <body>
+    <h1>Forms in HTML</h1>
+    <form action="submit.php">
+      <div>
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Enter Name" required/>
+      </div>
+
+      <div>
+        <label for="phone">Phone</label>
+        <input id="phone" type="tel" placeholder="Enter Phone Number" required/>
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter Email Address" required/>
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Enter Password" required/>
+      </div>
+
+      <div>
+        <label for="dateofbirth">Date Of Birth</label>
+        <input id="dateofbirth" type="date" placeholder="Enter Date Of Birth" required/>
+      </div>
+
+       <div>
+        <label for="gender">Gender</label>
+        <select id="gender" required>
+                   <option value="">Select Gender </option>
+                   <option value="male">Male</option>
+                   <option value="female">Female </option>
+                   <option value="other">Other </option>
+ 
+                   
+        </select>
+      </div>
+
+      <div class="form-group">
+    <label>Subscription Plan</label>
+
+    <div class="radio-group">
+        <input type="radio" id="basic" name="subscription">
+        <label for="basic">Basic</label>
+
+        <input type="radio" id="premium" name="subscription">
+        <label for="premium">Premium</label>
+
+        <input type="radio" id="gold" name="subscription">
+        <label for="gold">Gold</label>
+    </div>
+</div>
+      
+    <div class="form-group">
+    <div class="checkbox-group">
+        <input type="checkbox" id="terms" required>
+        <label for="terms">I agree to the Terms & Conditions.</label>
+    </div>
+</div>
+    
+    <div>
+        <label for="address">Address</label>
+        <textarea id="address" placeholder="Enter Address" rows="4"></textarea>
+        
+    </div>
+
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+    </form>
+  </body>
+</html>

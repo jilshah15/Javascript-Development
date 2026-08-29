@@ -1,0 +1,95 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.container{
+    width: 80%;
+    max-width: 900px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0d6efd;
+}
+
+/* Table */
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Header */
+thead{
+    background: #0d6efd;
+    color: white;
+}
+
+th{
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Body */
+td{
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alternate Row Color */
+tbody tr:nth-child(even){
+    background: #f2f2f2;
+}
+
+/* Hover Effect */
+tbody tr:hover{
+    background: #d8ebff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Rounded Corners */
+table{
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .container{
+        width:95%;
+    }
+
+    th,
+    td{
+        padding:10px;
+        font-size:14px;
+    }
+
+    h1{
+        font-size:24px;
+    }
+
+}
